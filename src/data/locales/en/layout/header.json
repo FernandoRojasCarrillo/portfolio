@@ -5,7 +5,7 @@
         "name": "About",
         "link": "#about",
         "image": {
-          "src": "/layout/header/about.webp",
+          "src": "/layout/header/en/about.webp",
           "alt": "Screenshot of About me section"
         }
       },
@@ -13,7 +13,7 @@
         "name": "Projects",
         "link": "#projects",
         "image": {
-          "src": "/layout/header/projects.webp",
+          "src": "/layout/header/en/projects.webp",
           "alt": "Screenshot of Projects section"
         }
       },
@@ -21,7 +21,7 @@
         "name": "Experience",
         "link": "#experience",
         "image": {
-          "src": "/layout/header/experience.webp",
+          "src": "/layout/header/en/experience.webp",
           "alt": "Screenshot of Experience section"
         }
       },

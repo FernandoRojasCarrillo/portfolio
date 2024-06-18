@@ -85,11 +85,9 @@ export const BentoGridItem = ({ data }: { data: AboutCardsProps }) => {
       <div className={`${id === 5 && "flex"} h-full`}>
         {img && (
           <div className="flex items-end w-full h-full absolute">
-            <Image
+            <img
               src={img}
               alt={img}
-              height={0}
-              width={0}
               className={cn(
                 imgClassName,
                 "object-cover object-center")}

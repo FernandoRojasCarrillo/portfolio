@@ -5,7 +5,7 @@
         "name": "Sobre mí",
         "link": "#about",
         "image": {
-          "src": "/layout/header/about.webp",
+          "src": "/layout/header/es/about.webp",
           "alt": "screenshot de la sección de Sobre mí"
         }
       },
@@ -13,7 +13,7 @@
         "name": "Proyectos",
         "link": "#projects",
         "image": {
-          "src": "/layout/header/projects.webp",
+          "src": "/layout/header/es/projects.webp",
           "alt": "screenshot de la sección de Proyectos"
         }
       },
@@ -21,7 +21,7 @@
         "name": "Experiencia",
         "link": "#experience",
         "image": {
-          "src": "/layout/header/experience.webp",
+          "src": "/layout/header/es/experience.webp",
           "alt": "screenshot de la sección de Experiencia"
         }
       },
