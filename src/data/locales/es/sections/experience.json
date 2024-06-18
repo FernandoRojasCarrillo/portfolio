@@ -1,0 +1,34 @@
+{
+  "experience": {
+    "title": "Mi experiencia *profesional*",
+    "cards": [
+      {
+        "title": "DESARROLLADOR FRONTEND",
+        "description": "En mi rol de Desarrollador Frontend para Eva Grupo, realicé una contribución significativa en la codificación y optimización de sitios web, con proyectos enfocados en Madrid, Barcelona y otros mercados internacionales. Además, participé activamente en la internacionalización de productos al idioma catalán, inglés, euskera y árabe.",
+        "company": "*Eva Grupo |* España",
+        "image": {
+          "src": "/sections/experience/1.svg",
+          "alt": "persona programando"
+        }
+      },
+      {
+        "title": "PRÁCTICAS PREPROFESIONALES EN DESARROLLO DE SOFTWARE",
+        "description": "Colaboré en el desarrollo del backend para la plataforma web Deep Pharma, encargándome de sistemas críticos como la autenticación y autorización con Auth0. Además, aporté en la creación de la interfaz de usuario, empleando tecnologías avanzadas como Next.js y StoryBook.",
+        "company": "*Deep Skill |* Perú",
+        "image": {
+          "src": "/sections/experience/2.svg",
+          "alt": "laptop"
+        }
+      },
+      {
+        "title": "ESCRITOR TÉCNICO DE SOFTWARE FREELANCE",
+        "description": "Redacté artículos técnicos sobre desarrollo de software para 4Geeks, abordando una amplia gama de temas. En estos, apliqué mi conocimiento en tecnologías como JavaScript, HTML, CSS, React, Python y Pandas para enriquecer el contenido y claridad de las explicaciones.",
+        "company": "*4Geeks Academy |* Internacional",
+        "image": {
+          "src": "/sections/experience/3.svg",
+          "alt": "bombilla"
+        }
+      }
+    ]
+  }
+}

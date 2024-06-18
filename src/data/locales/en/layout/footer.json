@@ -1,0 +1,41 @@
+{
+  "footer": {
+    "title": "Ready to take your *digital presence* to the *next level?*",
+    "subtitle": "Get in touch with me today and let's discuss how I can help you achieve your goals.",
+    "reference": "Portfolio based on the amazing design by @jsmasterypro",
+    "backgroundImage": {
+      "src": "/layout/footer/footer-grid.svg",
+      "alt": "grid background"
+    },
+    "button": {
+      "text": "Let's get in touch",
+      "link": "mailto:diego27fernando72@gmail.com"
+    },
+    "socialMedia": [
+      {
+        "id": 1,
+        "button": {
+          "src": "/layout/footer/git.svg",
+          "alt": "GitHub icon",
+          "link": "https://github.com/FernandoRojasCarrillo"
+        }
+      },
+      {
+        "id": 2,
+        "button": {
+          "src": "/layout/footer/twitter.svg",
+          "alt": "Twitter icon",
+          "link": "https://x.com/_DF_Fernando"
+        }
+      },
+      {
+        "id": 3,
+        "button": {
+          "src": "/layout/footer/linkedin.svg",
+          "alt": "LinkedIn icon",
+          "link": "https://www.linkedin.com/in/fernandorojascarrillo/"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "footer": {
+    "title": "¿Listo para llevar tu *presencia digital* al *siguiente nivel?*",
+    "subtitle": "Ponte en contacto conmigo hoy y discutamos cómo puedo ayudarte a alcanzar tus objetivos.",
+    "reference": "Portafolio basado en el increíble diseño de @jsmasterypro",
+    "backgroundImage": {
+      "src": "/layout/footer/footer-grid.svg",
+      "alt": "fondo de cuadrícula"
+    },
+    "button": {
+      "text": "Pongámonos en contacto",
+      "link": "mailto:diego27fernando72@gmail.com"
+    },
+    "socialMedia": [
+      {
+        "id": 1,
+        "button": {
+          "src": "/layout/footer/git.svg",
+          "alt": "icono de GitHub",
+          "link": "https://github.com/FernandoRojasCarrillo"
+        }
+      },
+      {
+        "id": 2,
+        "button": {
+          "src": "/layout/footer/twitter.svg",
+          "alt": "icono de Twitter",
+          "link": "https://x.com/_DF_Fernando"
+        }
+      },
+      {
+        "id": 3,
+        "button": {
+          "src": "/layout/footer/linkedin.svg",
+          "alt": "icono de LinkedIn",
+          "link": "https://www.linkedin.com/in/fernandorojascarrillo/"
+        }
+      }
+    ]
+  }
+}

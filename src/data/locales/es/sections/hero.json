@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "label": "MAGIC WEBSITE WITH NEXT.JS",
+    "title": "Transformando ideas en soluciones de vanguardia",
+    "subtitle": "Hola, soy Fernando, un apasionado *Desarrollador Fullstack* con base en *Colombia.*",
+    "button": {
+      "text": "Ver mi trabajo",
+      "link": "#projects"
+    },
+    "image": {
+      "src": "/sections/hero/profile.webp",
+      "alt": "foto de perfil"
+    }
+  }
+}

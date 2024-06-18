@@ -1,0 +1,35 @@
+{
+  "recentProjects": {
+    "title": "A small selection of *recent projects*",
+    "description": "Explore a selection of my most recent projects, developed with cutting-edge tools for web applications. These projects highlight the use of Next.js for optimal performance, Tailwind for modern design, and the Shadcn library for stylish components.",
+    "cards": [
+      {
+        "title": "Video Game Comparison Platform",
+        "description": "Discover the most enjoyable way to compare video game prices on major platforms and find perfect deals within your budget. This platform provides an exceptional user experience, designed specifically for gaming enthusiasts in Madrid.",
+        "thumbnail": "/sections/recentProjects/madrid.webp",
+        "link": {
+          "text": "Website",
+          "href": "https://www.videojuego.madrid/"
+        }
+      },
+      {
+        "title": "Funeral Insurance Comparison",
+        "description": "On this web platform, you can compare various funeral insurance policies to find the one that best suits your needs. Additionally, on Eva Seguros' Blog, you'll find a variety of articles explaining what funeral insurance is and how you can purchase it through our comparison tool.",
+        "thumbnail": "/sections/recentProjects/decesos.webp",
+        "link": {
+          "text": "Website",
+          "href": "https://www.segurodedecesos.com/"
+        }
+      },
+      {
+        "title": "Home Rental Comparison",
+        "description": "Embark on your search for the perfect vacation home with our website. Designed with a unique perspective for Arabic-speaking countries, this portal is your perfect ally in discovering ideal accommodations that will enrich your holidays. It is part of Eva Group's suite of comparison platforms.",
+        "thumbnail": "/sections/recentProjects/arabe.webp",
+        "link": {
+          "text": "Website",
+          "href": "https://www.kiramanzil.com/"
+        }
+      }
+    ]
+  }
+}

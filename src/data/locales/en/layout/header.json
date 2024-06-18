@@ -1,0 +1,60 @@
+{
+  "header": {
+    "links": [
+      {
+        "name": "About",
+        "link": "#about",
+        "image": {
+          "src": "/layout/header/about.webp",
+          "alt": "Screenshot of About me section"
+        }
+      },
+      {
+        "name": "Projects",
+        "link": "#projects",
+        "image": {
+          "src": "/layout/header/projects.webp",
+          "alt": "Screenshot of Projects section"
+        }
+      },
+      {
+        "name": "Experience",
+        "link": "#experience",
+        "image": {
+          "src": "/layout/header/experience.webp",
+          "alt": "Screenshot of Experience section"
+        }
+      },
+      {
+        "name": "Contact",
+        "link": "#contact",
+        "links": [
+          {
+            "id": 1,
+            "button": {
+              "src": "/layout/footer/git.svg",
+              "alt": "GitHub icon",
+              "link": "https://github.com/FernandoRojasCarrillo"
+            }
+          },
+          {
+            "id": 2,
+            "button": {
+              "src": "/layout/footer/twitter.svg",
+              "alt": "Twitter icon",
+              "link": "https://x.com/_DF_Fernando"
+            }
+          },
+          {
+            "id": 3,
+            "button": {
+              "src": "/layout/footer/linkedin.svg",
+              "alt": "LinkedIn icon",
+              "link": "https://www.linkedin.com/in/fernandorojascarrillo/"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

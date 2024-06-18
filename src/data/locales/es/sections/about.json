@@ -1,0 +1,105 @@
+{
+  "about": {
+    "techStack": {
+      "title": "Mi stack *tecnológico*",
+      "cards": [
+        {
+          "title": "Next.js"
+        },
+        {
+          "title": "React.js"
+        },
+        {
+          "title": "JavaScript"
+        },
+        {
+          "title": "TypeScript"
+        },
+        {
+          "title": "Shadcn.ui"
+        },
+        {
+          "title": "Eceternity.ui"
+        },
+        {
+          "title": "HTML/CSS"
+        },
+        {
+          "title": "Node.js"
+        },
+        {
+          "title": "Java"
+        },
+        {
+          "title": "Python"
+        },
+        {
+          "title": "Nest.js"
+        },
+        {
+          "title": "SQL"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": 1,
+        "title": "Fomento el trabajo en equipo mediante una comunicación abierta y constructiva.",
+        "description": "",
+        "imgClassName": "w-full h-full",
+        "titleClassName": "justify-end",
+        "img": "/sections/about/b1.svg",
+        "spareImg": "",
+        "button": null
+      },
+      {
+        "id": 2,
+        "title": "Adaptable a diversas zonas horarias, garantizo una comunicación fluida y oportuna.",
+        "description": "",
+        "imgClassName": "w-full absolute bottom-0 mt-auto",
+        "titleClassName": "justify-center",
+        "img": "/sections/about/about-2.svg",
+        "spareImg": "",
+        "button": null
+      },
+      {
+        "id": 3,
+        "title": "¿Quieres conocer más sobre mi perfil?",
+        "description": "",
+        "imgClassName": "",
+        "titleClassName": "justify-start",
+        "img": "/sections/about/grid.svg",
+        "spareImg": "/sections/about/b4.svg",
+        "button": {
+          "textOne": "Abrir CV",
+          "textTwo": "",
+          "link": "/personal/resume.pdf"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Apasionado por la tecnología y dedicado al arte del desarrollo.",
+        "description": "",
+        "imgClassName": "absolute right-0 bottom-0 md:w-96 w-60",
+        "titleClassName": "justify-start",
+        "img": "/sections/about/b5.svg",
+        "spareImg": "/sections/about/grid.svg",
+        "button": null
+      },
+      {
+        "id": 5,
+        "title": "¿Quieres empezar un proyecto juntos?",
+        "description": "",
+        "imgClassName": "",
+        "titleClassName": "md:max-w-full max-w-60",
+        "img": "",
+        "spareImg": "",
+        "button": {
+          "textOne": "Copia mi correo",
+          "textTwo": "Correo copiado",
+          "link": ""
+        }
+      }
+    ]
+  }
+}
