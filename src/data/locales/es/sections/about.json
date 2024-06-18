@@ -73,7 +73,7 @@
         "button": {
           "textOne": "Abrir CV",
           "textTwo": "",
-          "link": "/personal/resume.pdf"
+          "link": "/resume.pdf"
         }
       },
       {
