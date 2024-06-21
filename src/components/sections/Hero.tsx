@@ -1,6 +1,5 @@
 "use client";
 
-import { HoverHighlight } from "@/components/ui/hoverHighlight";
 import { SpotlightEffect } from "@/components/ui/spotlight";
 import { TextGenerateEffect } from "@/components/ui/textGenerateEffect";
 import { MagicButton } from "@/components/ui/magicButton";
@@ -14,11 +13,9 @@ export const Hero = ({ data, language }: HeroProps) => {
   const { label, title, subtitle, button, image } = data;
 
   return (
-    <HoverHighlight>
-      <div className="absolute inset-[auto_0_0_0] h-48 bg-[linear-gradient(transparent,#000319)]"></div>
-
+    <div className="py-28">
       <div className="h-screen -z-50 w-full bg-transparent bg-grid-white/[0.03] flex items-center justify-center absolute top-0 left-0">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,#000319)]"></div>
       </div>
 
       <SpotlightEffect />
@@ -66,7 +63,7 @@ export const Hero = ({ data, language }: HeroProps) => {
           </Link>
         </div>
       </div>
-    </HoverHighlight>
+    </div>
   );
 }
 

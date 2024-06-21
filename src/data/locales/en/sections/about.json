@@ -1,7 +1,7 @@
 {
   "about": {
     "techStack": {
-      "title": "My *technological* stack",
+      "title": "My *tech* stack",
       "cards": [
         {
           "title": "Next.js"
@@ -73,7 +73,7 @@
         "button": {
           "textOne": "Open CV",
           "textTwo": "",
-          "link": "/resume.pdf"
+          "link": "/en/resume.pdf"
         }
       },
       {
