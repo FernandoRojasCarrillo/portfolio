@@ -3,14 +3,13 @@
 import { SpotlightEffect } from "@/components/ui/spotlight";
 import { TextGenerateEffect } from "@/components/ui/textGenerateEffect";
 import { MagicButton } from "@/components/ui/magicButton";
-import { textFormat } from "@/lib/text";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
-import { HeroProps } from "@/types/sections/hero";
+import { useTranslations } from 'next-intl';
 
-export const Hero = ({ data, language }: HeroProps) => {
-  const { label, title, subtitle, button, image } = data;
+export const Hero = async ({ language }: { language: string }) => {
+  const t = useTranslations("hero");
 
   return (
     <div className="py-28">
@@ -24,7 +23,7 @@ export const Hero = ({ data, language }: HeroProps) => {
         <div className="flex flex-col items-center gap-14 max-w-[89vw] md:max-w-2xl lg:max-w-5xl">
           <div className="flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-[80vw]" >
-              {textFormat(label)}
+              {t("label")}
             </h2>
 
             <TextGenerateEffect
@@ -32,33 +31,35 @@ export const Hero = ({ data, language }: HeroProps) => {
                 "max-w-3xl": language === "en"
               })}
             >
-              {title}
+              {t("title")}
             </TextGenerateEffect>
 
             <div className={cn("flex gap-6 items-center max-w-[35rem] p-4 rounded-xl border-2 border-[#6971A229]", {
               "max-w-[31rem]": language === "en"
             })}>
               <Image
-                src={image.src}
-                alt={image.alt}
+                src={t("image.src")}
+                alt={t("image.alt")}
                 width={100}
                 height={100}
                 className="size-16 rounded-full object-cover"
               />
 
               <p className="md:tracking-wider text-white text-sm md:text-base lg:text-base">
-                {textFormat(subtitle)}
+                {t.rich("subtitle", {
+                  color: (text) => <span className="text-purple" >{text}</span>
+                })}
               </p>
             </div>
           </div>
 
-          <Link href={button.link} className="max-sm:w-full">
+          <Link href={t("button.link")} className="max-sm:w-full">
             <MagicButton
               as="button"
               containerClassName="max-sm:w-full"
               className="px-20"
             >
-              <span>{button.text}</span>
+              <span>{t("button.text")}</span>
             </MagicButton>
           </Link>
         </div>

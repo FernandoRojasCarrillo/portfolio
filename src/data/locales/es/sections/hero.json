@@ -2,7 +2,7 @@
   "hero": {
     "label": "MAGIC WEBSITE WITH NEXT.JS",
     "title": "Transformando ideas en soluciones de vanguardia",
-    "subtitle": "Hola, soy Fernando, un apasionado *Desarrollador Fullstack* con base en *Colombia.*",
+    "subtitle": "Hola, soy Fernando, un apasionado <color>Desarrollador Fullstack</color> con base en <color>Colombia.</color>",
     "button": {
       "text": "Ver mi trabajo",
       "link": "#projects"

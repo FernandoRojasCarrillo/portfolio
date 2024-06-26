@@ -1,24 +1,25 @@
 "use client";
 import React from "react";
-import { textFormat } from "@/lib/text";
 import { Card } from "@/components/ui/movingBorders";
 import Image from "next/image"
-import { ExperienceProps } from "@/types/sections/experience";
 import { TracingBeam } from "@/components/ui/tracingBeam";
+import { useTranslations } from "next-intl";
 
-export function Experience({ data }: {
-  data: ExperienceProps
-}) {
-  const { title, cards } = data;
+export function Experience() {
+  const t = useTranslations("experience");
 
   return (
     <div id="experience" className="max-sm:mt-16" >
       <TracingBeam className="px-6 mt-10 mb-20 lg:my-20">
         <div className="flex flex-col gap-14 max-md:pl-6">
-          <h1 className="font-semibold text-5xl">{textFormat(title)}</h1>
+          <h1 className="font-semibold text-5xl">
+            {t.rich("title", {
+              color: (text) => <span className="text-purple">{text}</span>
+            })}
+          </h1>
 
           <div className="flex flex-col gap-6">
-            {cards.map(({ title, description, company, image }, index) => (
+            {t.raw("cards").map(({ title, description, company, image }: any, index: number) => (
               <Card
                 key={index}
                 duration={Math.floor(Math.random() * 10000 + 10000)}
@@ -34,9 +35,9 @@ export function Experience({ data }: {
                   />
 
                   <div className="flex flex-col gap-3 lg:ms-5">
-                    <h1 className="text-start text-xl md:text-2xl font-bold">{textFormat(title)}</h1>
-                    <p className="text-start text-white-100">{textFormat(description)}</p>
-                    <p className="text-start text-white-100">{textFormat(company)}</p>
+                    <h1 className="text-start text-xl md:text-2xl font-bold">{title}</h1>
+                    <p className="text-start text-white-100">{description}</p>
+                    <p className="text-start text-white-100">{company}</p>
                   </div>
                 </div>
               </Card>

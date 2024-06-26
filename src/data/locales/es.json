@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "title": "Eva Insurance",
+    "description": "Consulta tu seguro online y modifica tu contrato en 1 minuto",
+    "image": "https://correct-desire-7ba8bfcc91.media.strapiapp.com/ESPANOL_EVA_Insurance_b096cef0d2.png"
+  },
+  "header": {
+    "links": [
+      {
+        "name": "Sobre mí",
+        "link": "#about",
+        "image": {
+          "src": "/layout/header/es/about.webp",
+          "alt": "screenshot de la sección de Sobre mí"
+        }
+      },
+      {
+        "name": "Proyectos",
+        "link": "#projects",
+        "image": {
+          "src": "/layout/header/es/projects.webp",
+          "alt": "screenshot de la sección de Proyectos"
+        }
+      },
+      {
+        "name": "Experiencia",
+        "link": "#experience",
+        "image": {
+          "src": "/layout/header/es/experience.webp",
+          "alt": "screenshot de la sección de Experiencia"
+        }
+      },
+      {
+        "name": "Contacto",
+        "link": "#contact",
+        "links": [
+          {
+            "id": 1,
+            "button": {
+              "src": "/layout/footer/git.svg",
+              "alt": "icono de GitHub",
+              "link": "https://github.com/FernandoRojasCarrillo"
+            }
+          },
+          {
+            "id": 2,
+            "button": {
+              "src": "/layout/footer/twitter.svg",
+              "alt": "icono de Twitter",
+              "link": "https://x.com/_DF_Fernando"
+            }
+          },
+          {
+            "id": 3,
+            "button": {
+              "src": "/layout/footer/linkedin.svg",
+              "alt": "icono de LinkedIn",
+              "link": "https://www.linkedin.com/in/fernandorojascarrillo/"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "hero": {
+    "label": "MAGIC WEBSITE WITH NEXT.JS",
+    "title": "Transformando ideas en soluciones de vanguardia",
+    "subtitle": "Hola, soy Fernando, un apasionado <color>Desarrollador Fullstack</color> con base en <color>Colombia.</color>",
+    "button": {
+      "text": "Ver mi trabajo",
+      "link": "#projects"
+    },
+    "image": {
+      "src": "/sections/hero/profile.webp",
+      "alt": "foto de perfil"
+    }
+  },
+  "about": {
+    "techStack": {
+      "title": "Mi stack <color>tecnológico</color>",
+      "cards": [
+        {
+          "title": "Next.js"
+        },
+        {
+          "title": "React.js"
+        },
+        {
+          "title": "JavaScript"
+        },
+        {
+          "title": "TypeScript"
+        },
+        {
+          "title": "Shadcn.ui"
+        },
+        {
+          "title": "Eceternity.ui"
+        },
+        {
+          "title": "HTML/CSS"
+        },
+        {
+          "title": "Node.js"
+        },
+        {
+          "title": "Java"
+        },
+        {
+          "title": "Python"
+        },
+        {
+          "title": "Nest.js"
+        },
+        {
+          "title": "SQL"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": 1,
+        "title": "Fomento el trabajo en equipo mediante una comunicación abierta y constructiva.",
+        "description": "",
+        "imgClassName": "w-full h-full",
+        "titleClassName": "justify-end",
+        "img": "/sections/about/b1.svg",
+        "spareImg": "",
+        "button": null
+      },
+      {
+        "id": 2,
+        "title": "Adaptable a diversas zonas horarias, garantizo una comunicación fluida y oportuna.",
+        "description": "",
+        "imgClassName": "w-full absolute bottom-0 mt-auto",
+        "titleClassName": "justify-center",
+        "img": "/sections/about/about-2.svg",
+        "spareImg": "",
+        "button": null
+      },
+      {
+        "id": 3,
+        "title": "¿Quieres conocer más sobre mi perfil?",
+        "description": "",
+        "imgClassName": "",
+        "titleClassName": "justify-start",
+        "img": "/sections/about/grid.svg",
+        "spareImg": "/sections/about/b4.svg",
+        "button": {
+          "textOne": "Abrir CV",
+          "textTwo": "",
+          "link": "/es/curriculum.pdf"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Apasionado por la tecnología y dedicado al arte del desarrollo.",
+        "description": "",
+        "imgClassName": "absolute right-0 bottom-0 md:w-96 w-60",
+        "titleClassName": "justify-start",
+        "img": "/sections/about/b5.svg",
+        "spareImg": "/sections/about/grid.svg",
+        "button": null
+      },
+      {
+        "id": 5,
+        "title": "¿Quieres empezar un proyecto juntos?",
+        "description": "",
+        "imgClassName": "",
+        "titleClassName": "md:max-w-full max-w-60",
+        "img": "",
+        "spareImg": "",
+        "button": {
+          "textOne": "Copia mi correo",
+          "textTwo": "Correo copiado",
+          "link": ""
+        }
+      }
+    ]
+  },
+  "experience": {
+    "title": "Mi experiencia <color>profesional</color>",
+    "cards": [
+      {
+        "title": "DESARROLLADOR FRONTEND",
+        "description": "En mi rol de Desarrollador Frontend para Eva Grupo, realicé una contribución significativa en la codificación y optimización de sitios web, con proyectos enfocados en Madrid, Barcelona y otros mercados internacionales. Además, participé activamente en la internacionalización de productos al idioma catalán, inglés, euskera y árabe.",
+        "company": "*Eva Grupo |* España",
+        "image": {
+          "src": "/sections/experience/1.svg",
+          "alt": "persona programando"
+        }
+      },
+      {
+        "title": "PRÁCTICAS PREPROFESIONALES EN DESARROLLO DE SOFTWARE",
+        "description": "Colaboré en el desarrollo del backend para la plataforma web Deep Pharma, encargándome de sistemas críticos como la autenticación y autorización con Auth0. Además, aporté en la creación de la interfaz de usuario, empleando tecnologías avanzadas como Next.js y StoryBook.",
+        "company": "*Deep Skill |* Perú",
+        "image": {
+          "src": "/sections/experience/2.svg",
+          "alt": "laptop"
+        }
+      },
+      {
+        "title": "ESCRITOR TÉCNICO DE SOFTWARE FREELANCE",
+        "description": "Redacté artículos técnicos sobre desarrollo de software para 4Geeks, abordando una amplia gama de temas. En estos, apliqué mi conocimiento en tecnologías como JavaScript, HTML, CSS, React, Python y Pandas para enriquecer el contenido y claridad de las explicaciones.",
+        "company": "*4Geeks Academy |* Internacional",
+        "image": {
+          "src": "/sections/experience/3.svg",
+          "alt": "bombilla"
+        }
+      }
+    ]
+  }
+}
