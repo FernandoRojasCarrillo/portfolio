@@ -4,6 +4,8 @@
 
 Welcome to my portfolio! Here you will find a selection of my most recent and relevant projects, as well as information about my skills and experience.
 
+[fernandorojas.vercel.app](https://fernandorojas.vercel.app/)
+
 ## Table of Contents
 
 - [About Me](#about-me)
@@ -26,9 +28,10 @@ On this web platform, you can **compare various funeral insurance** policies to 
 
 #### Technologies
 
-```bash
-Next.js  Shadcn.ui  JavaScript  internationalization
-``` 
+`Next.js`
+`Shadcn.ui`
+`JavaScript`
+`internationalization`
 
 [segurodedecesos.com](https://www.segurodedecesos.com/)
 
@@ -42,9 +45,10 @@ Discover the most enjoyable way to **compare video game prices on major platform
 
 #### Technologies
 
-```bash
-Next.js  Shadcn.ui  JavaScript  internationalization
-``` 
+`Next.js`
+`Shadcn.ui`
+`JavaScript`
+`internationalization`
 
 [videojuego.madrid](https://www.videojuego.madrid/)
 
