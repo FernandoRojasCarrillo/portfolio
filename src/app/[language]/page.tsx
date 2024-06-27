@@ -16,7 +16,7 @@ export default async function IndexPage({
       <Hero language={language} />
       <About />
       <Experience />
-      {/* <RecentProjects data={recentProjects} /> */}
-    </ >
+      <RecentProjects />
+    </>
   );
 }

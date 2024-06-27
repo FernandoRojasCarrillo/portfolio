@@ -2,6 +2,7 @@ import React from 'react'
 import { BentoGrid, BentoGridItem } from '@/components/ui/bentoGrid';
 import { TeckStackCarousel } from '@/components/ui/teckStackCarousel';
 import { useTranslations } from 'next-intl';
+import { AboutCardsProps } from '@/types/sections/about';
 
 
 export const About = () => {
@@ -12,7 +13,7 @@ export const About = () => {
       <div className="container">
         <BentoGrid>
           {
-            t.raw("cards").map((data: any, index: number) => (
+            t.raw("cards").map((data: AboutCardsProps, index: number) => (
               <BentoGridItem key={index} data={data} />
             ))
           }

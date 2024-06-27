@@ -1,7 +1,3 @@
-export type HeaderProps = {
-  links: NavLinksProps[];
-};
-
 export type NavLinksProps = {
   name: string;
   link: string;

@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/carousel"
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay"
-import { TechStackProps } from "@/types/sections/about";
 import { useTranslations } from "next-intl";
 
 

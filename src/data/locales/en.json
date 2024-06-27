@@ -7,38 +7,38 @@
   "header": {
     "links": [
       {
-        "name": "Sobre mí",
+        "name": "About",
         "link": "#about",
         "image": {
-          "src": "/layout/header/es/about.webp",
-          "alt": "screenshot de la sección de Sobre mí"
+          "src": "/layout/header/en/about.webp",
+          "alt": "Screenshot of About me section"
         }
       },
       {
-        "name": "Proyectos",
+        "name": "Projects",
         "link": "#projects",
         "image": {
-          "src": "/layout/header/es/projects.webp",
-          "alt": "screenshot de la sección de Proyectos"
+          "src": "/layout/header/en/projects.webp",
+          "alt": "Screenshot of Projects section"
         }
       },
       {
-        "name": "Experiencia",
+        "name": "Experience",
         "link": "#experience",
         "image": {
-          "src": "/layout/header/es/experience.webp",
-          "alt": "screenshot de la sección de Experiencia"
+          "src": "/layout/header/en/experience.webp",
+          "alt": "Screenshot of Experience section"
         }
       },
       {
-        "name": "Contacto",
+        "name": "Contact",
         "link": "#contact",
         "links": [
           {
             "id": 1,
             "button": {
               "src": "/layout/footer/git.svg",
-              "alt": "icono de GitHub",
+              "alt": "GitHub icon",
               "link": "https://github.com/FernandoRojasCarrillo"
             }
           },
@@ -46,7 +46,7 @@
             "id": 2,
             "button": {
               "src": "/layout/footer/twitter.svg",
-              "alt": "icono de Twitter",
+              "alt": "Twitter icon",
               "link": "https://x.com/_DF_Fernando"
             }
           },
@@ -54,7 +54,7 @@
             "id": 3,
             "button": {
               "src": "/layout/footer/linkedin.svg",
-              "alt": "icono de LinkedIn",
+              "alt": "LinkedIn icon",
               "link": "https://www.linkedin.com/in/fernandorojascarrillo/"
             }
           }
@@ -64,20 +64,20 @@
   },
   "hero": {
     "label": "MAGIC WEBSITE WITH NEXT.JS",
-    "title": "Transformando ideas en soluciones de vanguardia",
-    "subtitle": "Hola, soy Fernando, un apasionado <color>Desarrollador Fullstack</color> con base en <color>Colombia.</color>",
+    "title": "Turning ideas into cutting-edge solutions",
+    "subtitle": "Hi, I'm Fernando, a passionate <color>Fullstack Developer</color> based in <color>Colombia.</color>",
     "button": {
-      "text": "Ver mi trabajo",
+      "text": "See my work",
       "link": "#projects"
     },
     "image": {
       "src": "/sections/hero/profile.webp",
-      "alt": "foto de perfil"
+      "alt": "profile picture"
     }
   },
   "about": {
     "techStack": {
-      "title": "Mi stack <color>tecnológico</color>",
+      "title": "My <color>tech</color> stack",
       "cards": [
         {
           "title": "Next.js"
@@ -120,7 +120,7 @@
     "cards": [
       {
         "id": 1,
-        "title": "Fomento el trabajo en equipo mediante una comunicación abierta y constructiva.",
+        "title": "I promote teamwork through open and constructive communication.",
         "description": "",
         "imgClassName": "w-full h-full",
         "titleClassName": "justify-end",
@@ -130,7 +130,7 @@
       },
       {
         "id": 2,
-        "title": "Adaptable a diversas zonas horarias, garantizo una comunicación fluida y oportuna.",
+        "title": "Adaptable to various time zones, ensuring smooth and timely communication.",
         "description": "",
         "imgClassName": "w-full absolute bottom-0 mt-auto",
         "titleClassName": "justify-center",
@@ -140,21 +140,21 @@
       },
       {
         "id": 3,
-        "title": "¿Quieres conocer más sobre mi perfil?",
+        "title": "Want to know more about my profile?",
         "description": "",
         "imgClassName": "",
         "titleClassName": "justify-start",
         "img": "/sections/about/grid.svg",
         "spareImg": "/sections/about/b4.svg",
         "button": {
-          "textOne": "Abrir CV",
+          "textOne": "Open CV",
           "textTwo": "",
-          "link": "/es/curriculum.pdf"
+          "link": "/en/resume.pdf"
         }
       },
       {
         "id": 4,
-        "title": "Apasionado por la tecnología y dedicado al arte del desarrollo.",
+        "title": "Passionate about technology and dedicated to the art of development.",
         "description": "",
         "imgClassName": "absolute right-0 bottom-0 md:w-96 w-60",
         "titleClassName": "justify-start",
@@ -164,22 +164,22 @@
       },
       {
         "id": 5,
-        "title": "¿Quieres empezar un proyecto juntos?",
+        "title": "Ready to start a project together?",
         "description": "",
         "imgClassName": "",
         "titleClassName": "md:max-w-full max-w-60",
         "img": "",
         "spareImg": "",
         "button": {
-          "textOne": "Copia mi correo",
-          "textTwo": "Correo copiado",
+          "textOne": "Copy my email",
+          "textTwo": "Email copied",
           "link": ""
         }
       }
     ]
   },
   "experience": {
-    "title": "Mi experiencia <color>profesional</color>",
+    "title": "My <color>professional</color> experience",
     "cards": {
       "options": [
         "cardOne",
@@ -187,37 +187,37 @@
         "cardThree"
       ],
       "cardOne": {
-        "title": "DESARROLLADOR FRONTEND",
-        "description": "En mi rol de Desarrollador Frontend para Eva Grupo, realicé una contribución significativa en la codificación y optimización de sitios web, con proyectos enfocados en Madrid, Barcelona y otros mercados internacionales. Además, participé activamente en la internacionalización de productos al idioma catalán, inglés, euskera y árabe.",
-        "company": "<color>Eva Grupo |</color> España",
+        "title": "FRONTEND DEVELOPER",
+        "description": "In my role as a Frontend Developer for Eva Group, I made significant contributions to coding and optimizing websites, focusing on projects in Madrid, Barcelona, and other international markets. I also actively participated in product internationalization to Catalan, English, Basque, and Arabic languages.",
+        "company": "<color>Eva Group |</color> Spain",
         "image": {
           "src": "/sections/experience/1.svg",
-          "alt": "persona programando"
+          "alt": "person coding"
         }
       },
       "cardTwo": {
-        "title": "PRÁCTICAS PREPROFESIONALES EN DESARROLLO DE SOFTWARE",
-        "description": "Colaboré en el desarrollo del backend para la plataforma web Deep Pharma, encargándome de sistemas críticos como la autenticación y autorización con Auth0. Además, aporté en la creación de la interfaz de usuario, empleando tecnologías avanzadas como Next.js y StoryBook.",
-        "company": "<color>Deep Skill |</color> Perú",
+        "title": "PRE-PROFESSIONAL SOFTWARE DEVELOPMENT INTERNSHIP",
+        "description": "I collaborated in backend development for the Deep Pharma web platform, handling critical systems such as authentication and authorization with Auth0. Additionally, I contributed to the creation of the user interface using advanced technologies like Next.js and StoryBook.",
+        "company": "<color>Deep Skill |</color> Peru",
         "image": {
           "src": "/sections/experience/2.svg",
           "alt": "laptop"
         }
       },
       "cardThree": {
-        "title": "ESCRITOR TÉCNICO DE SOFTWARE FREELANCE",
-        "description": "Redacté artículos técnicos sobre desarrollo de software para 4Geeks, abordando una amplia gama de temas. En estos, apliqué mi conocimiento en tecnologías como JavaScript, HTML, CSS, React, Python y Pandas para enriquecer el contenido y claridad de las explicaciones.",
-        "company": "<color>4Geeks Academy |</color> Internacional",
+        "title": "FREELANCE SOFTWARE TECHNICAL WRITER",
+        "description": "I authored technical articles on software development for 4Geeks, covering a wide range of topics. Leveraging my knowledge in technologies like JavaScript, HTML, CSS, React, Python, and Pandas, I enhanced content quality and clarity of explanations.",
+        "company": "<color>4Geeks Academy |</color> International",
         "image": {
           "src": "/sections/experience/3.svg",
-          "alt": "bombilla"
+          "alt": "lightbulb"
         }
       }
     }
   },
   "recentProjects": {
-    "title": "Una pequeña selección de <color>proyectos recientes</color>",
-    "description": "Explora una selección de mis proyectos más recientes, desarrollados con herramientas de vanguardia para aplicaciones web. Destacan entre ellos el uso de Next.js para un rendimiento óptimo, Tailwind para un diseño moderno y la biblioteca Shadcn para componentes con estilo.",
+    "title": "A small selection of <color>recent projects</color>",
+    "description": "Explore a selection of my most recent projects, developed with cutting-edge tools for web applications. These projects highlight the use of Next.js for optimal performance, Tailwind for modern design, and the Shadcn library for stylish components.",
     "cards": {
       "options": [
         "cardOne",
@@ -225,44 +225,44 @@
         "cardThree"
       ],
       "cardOne": {
-        "title": "Plataforma de Comparación de <color>Videojuegos</color>",
-        "description": "Descubre la forma más amena de comparar precios de videojuegos en las principales plataformas y encuentra las ofertas perfectas para tu presupuesto. Esta plataforma brinda una experiencia de usuario excepcional, diseñada especialmente para los entusiastas de los videojuegos en Madrid.",
+        "title": "Video Game Comparison Platform",
+        "description": "Discover the most enjoyable way to compare video game prices on major platforms and find perfect deals within your budget. This platform provides an exceptional user experience, designed specifically for gaming enthusiasts in Madrid.",
         "thumbnail": "/sections/recentProjects/madrid.webp",
         "link": {
-          "text": "Sitio web",
+          "text": "Website",
           "href": "https://www.videojuego.madrid/"
         }
       },
       "cardTwo": {
-        "title": "Comparador de <color>Seguro de Decesos</color>",
-        "description": "En esta plataforma web, puedes comparar distintos seguros de decesos para encontrar el que mejor se adapte a tus necesidades. Además, en el Blog de Eva Seguros, encontrarás una variedad de artículos donde te explicamos qué es un seguro de decesos y cómo puedes contratarlo a través de nuestro comparador.",
+        "title": "Funeral Insurance Comparison",
+        "description": "On this web platform, you can compare various funeral insurance policies to find the one that best suits your needs. Additionally, on Eva Seguros' Blog, you'll find a variety of articles explaining what funeral insurance is and how you can purchase it through our comparison tool.",
         "thumbnail": "/sections/recentProjects/decesos.webp",
         "link": {
-          "text": "Sitio web",
+          "text": "Website",
           "href": "https://www.segurodedecesos.com/"
         }
       },
       "cardThree": {
-        "title": "Comparador de <color>Alquiler de Viviendas</color>",
-        "description": "Embárcate en la búsqueda de tu próximo hogar vacacional con nuestro sitio web. Diseñado con una perspectiva única para los países árabes, este portal es tu aliado perfecto para descubrir alojamientos ideales que enriquecerán tus vacaciones. Forma parte del conjunto de comparadores de la compañía Eva Grupo.",
+        "title": "Home Rental Comparison",
+        "description": "Embark on your search for the perfect vacation home with our website. Designed with a unique perspective for Arabic-speaking countries, this portal is your perfect ally in discovering ideal accommodations that will enrich your holidays. It is part of Eva Group's suite of comparison platforms.",
         "thumbnail": "/sections/recentProjects/arabe.webp",
         "link": {
-          "text": "Sitio web",
+          "text": "Website",
           "href": "https://www.kiramanzil.com/"
         }
       }
     }
   },
   "footer": {
-    "title": "¿Listo para llevar tu <color>presencia digital</color> al <color>siguiente nivel?</color>",
-    "subtitle": "Ponte en contacto conmigo hoy y discutamos cómo puedo ayudarte a alcanzar tus objetivos.",
-    "reference": "Portafolio basado en el increíble diseño de @jsmasterypro",
+    "title": "Ready to take your <color>digital presence</color> to the <color>next level?</color>",
+    "subtitle": "Get in touch with me today and let's discuss how I can help you achieve your goals.",
+    "reference": "Portfolio based on the amazing design by @jsmasterypro",
     "backgroundImage": {
       "src": "/layout/footer/footer-grid.svg",
-      "alt": "fondo de cuadrícula"
+      "alt": "grid background"
     },
     "button": {
-      "text": "Pongámonos en contacto",
+      "text": "Let's get in touch",
       "link": "mailto:diego27fernando72@gmail.com"
     },
     "socialMedia": [
@@ -270,7 +270,7 @@
         "id": 1,
         "button": {
           "src": "/layout/footer/git.svg",
-          "alt": "icono de GitHub",
+          "alt": "GitHub icon",
           "link": "https://github.com/FernandoRojasCarrillo"
         }
       },
@@ -278,7 +278,7 @@
         "id": 2,
         "button": {
           "src": "/layout/footer/twitter.svg",
-          "alt": "icono de Twitter",
+          "alt": "Twitter icon",
           "link": "https://x.com/_DF_Fernando"
         }
       },
@@ -286,7 +286,7 @@
         "id": 3,
         "button": {
           "src": "/layout/footer/linkedin.svg",
-          "alt": "icono de LinkedIn",
+          "alt": "LinkedIn icon",
           "link": "https://www.linkedin.com/in/fernandorojascarrillo/"
         }
       }

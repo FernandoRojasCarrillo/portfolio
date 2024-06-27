@@ -1,27 +1,26 @@
 "use client";
-import React from "react";
+
 import {
   motion,
   useScroll,
   useTransform,
   useSpring,
-  MotionValue,
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { textFormat } from "@/lib/text";
-import { ProjectsCard, RecentProjectsProps } from "@/types/sections/recentProjects";
 import { FaLocationArrow } from "react-icons/fa";
 import { useIsDesktop } from "@/hooks/useResponsive";
+import { useTranslations } from "next-intl";
+import { useRef } from "react";
+import { ProductCardProps } from "@/types/sections/recentProjects";
 
 
-export const RecentProjects = ({ data }: RecentProjectsProps) => {
-  const { title, description, cards } = data;
-
+export const RecentProjects = () => {
   const isDesktop = useIsDesktop();
+  const t = useTranslations("recentProjects");
 
-  const ref = React.useRef(null);
+  const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -68,10 +67,12 @@ export const RecentProjects = ({ data }: RecentProjectsProps) => {
 
       <div className="max-w-7xl relative mx-auto pt-0 pb-8 lg:pt-40 md:pb-28 md:px-4 w-full left-0 top-0">
         <h1 className="text-4xl md:text-7xl max-w-3xl font-bold dark:text-white">
-          {textFormat(title)}
+          {t.rich("title", {
+            color: (text) => <span className="text-purple">{text}</span>
+          })}
         </h1>
         <p className="max-w-3xl text-base md:text-xl mt-8 dark:text-neutral-200">
-          {textFormat(description)}
+          {t("description")}
         </p>
       </div>
 
@@ -84,12 +85,17 @@ export const RecentProjects = ({ data }: RecentProjectsProps) => {
         }}
       >
         <motion.div className="grid lg:grid-cols-4 max-lg:gap-6 md:px-4 lg:grid-rows-[repeat(7,minmax(0,8rem))] max-lg:max-w-2xl">
-          {cards.map((product, index) => (
+          {t.raw("cards.options").map((option: string, index: number) => (
             <ProductCard
-              product={product}
+              key={index}
+              title={t.rich(`cards.${option}.title`, {
+                color: (text) => <span className="text-purple" >{text}</span>
+              })}
+              description={t(`cards.${option}.description`)}
+              link={t.raw(`cards.${option}.link`)}
+              thumbnail={t(`cards.${option}.thumbnail`)}
               translateY={cardsTranslateY[index]}
               translateX={cardsTranslateX[index]}
-              key={product.title}
               className={cn("lg:col-span-2", {
                 "lg:col-start-2 lg:row-start-3 lg:z-10": index === 0,
                 "lg:col-start-3 lg:row-start-5": index === 2,
@@ -103,17 +109,14 @@ export const RecentProjects = ({ data }: RecentProjectsProps) => {
 };
 
 export const ProductCard = ({
-  product,
+  title,
+  description,
+  link,
+  thumbnail,
   className,
   translateY,
   translateX,
-}: {
-  product: ProjectsCard;
-  className?: string;
-  translateY: MotionValue<number>;
-  translateX: MotionValue<number>;
-}) => {
-  const { title, description, link, thumbnail } = product;
+}: ProductCardProps) => {
 
   const isDesktop = useIsDesktop();
 
@@ -123,7 +126,6 @@ export const ProductCard = ({
         y: isDesktop ? translateY : 0,
         x: isDesktop ? translateX : 0,
       }}
-      key={product.title}
       className={cn("group/product card h-56 sm:h-[24rem] w-full relative flex-shrink-0 hover:z-50 shadow-lg", className)}
     >
       <Image
@@ -131,20 +133,20 @@ export const ProductCard = ({
         height="600"
         width="600"
         className="object-cover object-left-top md:absolute h-full w-full max-sm:rounded-xl inset-0"
-        alt={title}
+        alt=""
       />
 
       <div className="flex flex-col gap-4 md:gap-6 justify-end p-4 md:p-8 absolute inset-0 h-full w-full md:opacity-0 transition-opacity duration-300 rounded-[inherit] overflow-clip group-hover/product:opacity-100 group-hover/product:duration-0 md:bg-[linear-gradient(45deg,rgba(0,3,25,0.9),80%,rgba(0,3,25,0.4))] bg-[linear-gradient(15deg,rgba(0,3,25,0.99),transparent_80%)] text-white max-sm:rounded-xl">
 
         <h2 className="text-base md:text-2xl max-w-48 md:max-w-72 max-md:[&_span]:text-white font-medium md:opacity-0 md:translate-x-8 transition-all duration-300 group-hover/product:translate-x-0 group-hover/product:opacity-100">
-          {textFormat(title)}
+          {title}
         </h2>
 
-        <p className="max-md:hidden font-light opacity-0 translate-x-20 transition-all duration-300 group-hover/product:translate-x-0 group-hover/product:opacity-100">{textFormat(description)}</p>
+        <p className="max-md:hidden font-light opacity-0 translate-x-20 transition-all duration-300 group-hover/product:translate-x-0 group-hover/product:opacity-100">{description}</p>
 
         <div className="flex gap-4 justify-between md:opacity-0 md:translate-x-32 transition-all duration-300 group-hover/product:translate-x-0 group-hover/product:opacity-100">
           <Link href={link.href} target="blank" className="flex gap-2 lg:gap-3 md:items-center cursor-pointer" >
-            <span className="text-purple max-md:text-xs">{textFormat(link.text)}</span>
+            <span className="text-purple max-md:text-xs">{link.text}</span>
             <FaLocationArrow color="#CBACF9" className="size-3" />
           </Link>
         </div>

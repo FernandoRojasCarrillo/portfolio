@@ -1,17 +1,11 @@
-export type RecentProjectsProps = {
-  data: {
-    title: string;
-    description: string;
-    cards: ProjectsCard[];
-  };
-};
+import { MotionValue } from "framer-motion";
 
-export type ProjectsCard = {
-  title: string;
+export type ProductCardProps = {
+  title: string | React.ReactNode;
   description: string;
+  link: any;
   thumbnail: string;
-  link: {
-    text: string;
-    href: string;
-  };
+  className?: string;
+  translateY: MotionValue<number>;
+  translateX: MotionValue<number>;
 };

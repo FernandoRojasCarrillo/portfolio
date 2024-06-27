@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, MenuItem } from "@/components/ui/navbarMenu";
+import { NavLinksProps } from "@/types/layout/header";
 
 
 const HeaderMenu = ({ links }: any) => {
@@ -12,7 +13,7 @@ const HeaderMenu = ({ links }: any) => {
   return (
     <Menu setActive={setActive}>
       {
-        links.map(({ name, link, image, links }: any, index: number) => (
+        links.map(({ name, link, image, links }: NavLinksProps, index: number) => (
           <Link key={index} href={link}>
             <MenuItem
               setActive={setActive}

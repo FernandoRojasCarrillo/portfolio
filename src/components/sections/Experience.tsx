@@ -19,7 +19,7 @@ export function Experience() {
           </h1>
 
           <div className="flex flex-col gap-6">
-            {t.raw("cards").map(({ title, description, company, image }: any, index: number) => (
+            {t.raw("cards.options").map((option: string, index: number) => (
               <Card
                 key={index}
                 duration={Math.floor(Math.random() * 10000 + 10000)}
@@ -27,17 +27,21 @@ export function Experience() {
                 className="flex-1 text-white border-neutral-200 dark:border-slate-800">
                 <div className="flex lg:flex-row flex-col lg:items-center p-4 py-6 md:p-5 lg:p-10 gap-2">
                   <Image
-                    src={image.src}
-                    alt={image.alt}
+                    src={t(`cards.${option}.image.src`)}
+                    alt={t(`cards.${option}.image.src`)}
                     width={0}
                     height={0}
                     className="lg:w-32 md:w-20 w-16"
                   />
 
                   <div className="flex flex-col gap-3 lg:ms-5">
-                    <h1 className="text-start text-xl md:text-2xl font-bold">{title}</h1>
-                    <p className="text-start text-white-100">{description}</p>
-                    <p className="text-start text-white-100">{company}</p>
+                    <h1 className="text-start text-xl md:text-2xl font-bold">{t(`cards.${option}.title`)}</h1>
+                    <p className="text-start text-white-100">{t(`cards.${option}.description`)}</p>
+                    <p className="text-start text-white-100">
+                      {t.rich(`cards.${option}.company`, {
+                        color: (text) => <span className="text-purple">{text}</span>
+                      })}
+                    </p>
                   </div>
                 </div>
               </Card>
