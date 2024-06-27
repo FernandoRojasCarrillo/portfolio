@@ -18,50 +18,52 @@ I'm Fernando Rojas, a passionate software developer with experience in cutting-e
 
 ## Projects
 
-<img src="./public/sections/recentProjects/decesos.webp" alt="funeral insurance" width="500" />
+![portfolio screenshot](./public/readme/decesos.webp)
 
-### *Eva Group - Funeral Insurance Comparator*
+### **Eva Group - Funeral Insurance Comparator**
 
 On this web platform, you can **compare various funeral insurance** policies to find the one that best suits your needs. Additionally, on **Eva Seguros' Blog**, you'll find a variety of articles explaining what funeral insurance is and how you can purchase it through our comparison tool.
 
 #### Technologies
 
-`Next.js` `Shadcn.ui` `JavaScript` `internationalization`
+```bash
+Next.js  Shadcn.ui  JavaScript  internationalization
+``` 
 
 [segurodedecesos.com](https://www.segurodedecesos.com/)
 
 ---
 
-<img src="./public/sections/recentProjects/madrid.webp" alt="video game comparison" width="500" />
+![portfolio screenshot](./public/readme/madrid.webp)
 
-### *Video Game Comparison Platform*
+### **Video Game Comparison Platform**
 
 Discover the most enjoyable way to **compare video game prices on major platforms** and find perfect deals within your budget. This platform provides an exceptional user experience, designed specifically for **gaming enthusiasts in Madrid.**
 
-`Next.js` `Shadcn.ui` `JavaScript` `internationalization`
+#### Technologies
+
+```bash
+Next.js  Shadcn.ui  JavaScript  internationalization
+``` 
 
 [videojuego.madrid](https://www.videojuego.madrid/)
 
 
 ## Skills
 
-`Next.js`
-`React.js`
-`JavaScript`
-`TypeScript`
-`Shadcn.ui`
-<br/>
-
-`Eceternity.ui`
-`HTML/CSS`
-`Node.js`
-`Java`
-`Python`
-<br/>
-
-`Nest.js`
-`SQL`
-`Git`
+* Next.js
+* React.js
+* JavaScript
+* TypeScript
+* Shadcn.ui
+* Eceternity.ui
+* HTML/CSS
+* Node.js
+* Java
+* Python
+* Nest.js
+* SQL
+* Git
 
 
 ## Contact
@@ -75,20 +77,31 @@ You can reach me through the following means:
 
 
 > [!NOTE]
-> ### Starting the Project Locally
+> To start the project locally, use your preferred package manager `npm`, `pnpm`, `yarn`, or `yarn`. Then, run the following commands to install dependencies and start the project on your localhost at port 3000.
 
-To start the project locally, run one of the following commands:
-
+#### Install Dependencies
 ```bash
+# Using npm
+npm install
+# Using yarn
+yarn install
+# Using pnpm
+pnpm install
+# Using bun
+bun install
+```
+
+#### Start the project
+```bash
+# Using npm
 npm run dev
-# or
+# Using yarn
 yarn dev
-# or
+# Using pnpm
 pnpm dev
-# or
+# Using bun
 bun dev
 ```
 
+
 Thank you for visiting my portfolio! 😊👋
-
-
