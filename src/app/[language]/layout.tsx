@@ -41,7 +41,7 @@ export default async function Root({
 
   return (
     <html lang={language}>
-      <body className={`relative bg-black-100 overflow-x-clip ${inter.className}`}>
+      <body className={`relative bg-black-100 w-screen overflow-x-hidden ${inter.className}`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"

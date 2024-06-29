@@ -8,7 +8,7 @@ type SpotlightProps = {
 
 export const SpotlightEffect = () => {
   return (
-    <div className="absolute w-screen top-0">
+    <div className="absolute w-screen top-0 overflow-x-clip">
       <div className="">
         <div className="top-0 left-0 absolute rotate-[5deg] h-[50rem] w-[50rem] opacity-40">
           <Spotlight className="-top-24 left-32 h-[50rem] w-[50rem]" />

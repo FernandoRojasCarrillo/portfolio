@@ -35,8 +35,14 @@ export function Experience() {
                   />
 
                   <div className="flex flex-col gap-3 lg:ms-5">
-                    <h1 className="text-start text-xl md:text-2xl font-bold">{t(`cards.${option}.title`)}</h1>
-                    <p className="text-start text-white-100">{t(`cards.${option}.description`)}</p>
+                    <h1 className="text-start text-xl md:text-2xl font-bold">
+                      {t(`cards.${option}.title`)}
+                    </h1>
+
+                    <p className="text-start text-white-100">
+                      {t(`cards.${option}.description`)}
+                    </p>
+
                     <p className="text-start text-white-100">
                       {t.rich(`cards.${option}.company`, {
                         color: (text) => <span className="text-purple">{text}</span>
