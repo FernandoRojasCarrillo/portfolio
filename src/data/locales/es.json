@@ -253,6 +253,10 @@
       }
     }
   },
+  "academicProjects": {
+    "title": "Algunos proyectos <br></br> con <color>propositos <br></br> academicos</color>",
+    "description": "Explora algunos de los proyectos que he realizado con propósitos académicos. Estos proyectos no solo me ayudaron a dominar nuevas tecnologías y herramientas como la autenticación con Clerk y contribuciones en tiempo real con Liveblocks, sino que también reflejan mi pasión por el aprendizaje y la mejora continua."
+  },
   "footer": {
     "title": "¿Listo para llevar tu <color>presencia digital</color> al <color>siguiente nivel?</color>",
     "subtitle": "Ponte en contacto conmigo hoy y discutamos cómo puedo ayudarte a alcanzar tus objetivos.",

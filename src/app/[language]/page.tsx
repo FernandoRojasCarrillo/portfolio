@@ -3,6 +3,7 @@ import { RecentProjects } from "@/components/sections/RecentProjects";
 import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
 import { generateMetadata } from "@/components/seo/HeadSeo";
+import AcademicProjects from "@/components/sections/AcademicProjects";
 
 export const metadata = generateMetadata();
 
@@ -17,6 +18,7 @@ export default async function IndexPage({
       <About />
       <Experience />
       <RecentProjects />
+      <AcademicProjects />
     </>
   );
 }
