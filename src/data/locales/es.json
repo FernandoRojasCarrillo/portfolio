@@ -95,7 +95,7 @@
           "title": "Shadcn.ui"
         },
         {
-          "title": "Eceternity.ui"
+          "title": "Aceternity.ui"
         },
         {
           "title": "HTML/CSS"
@@ -222,7 +222,8 @@
       "options": [
         "cardOne",
         "cardTwo",
-        "cardThree"
+        "cardThree",
+        "cardFour"
       ],
       "cardOne": {
         "title": "Plataforma de Comparación de <color>Videojuegos</color>",
@@ -243,6 +244,15 @@
         }
       },
       "cardThree": {
+        "title": "Comparador de <color>Alquiler de Viviendas</color>",
+        "description": "Embárcate en la búsqueda de tu próximo hogar vacacional con nuestro sitio web. Diseñado con una perspectiva única para los países árabes, este portal es tu aliado perfecto para descubrir alojamientos ideales que enriquecerán tus vacaciones. Forma parte del conjunto de comparadores de la compañía Eva Grupo.",
+        "thumbnail": "/sections/recentProjects/arabe.webp",
+        "link": {
+          "text": "Sitio web",
+          "href": "https://www.kiramanzil.com/"
+        }
+      },
+      "cardFour": {
         "title": "Comparador de <color>Alquiler de Viviendas</color>",
         "description": "Embárcate en la búsqueda de tu próximo hogar vacacional con nuestro sitio web. Diseñado con una perspectiva única para los países árabes, este portal es tu aliado perfecto para descubrir alojamientos ideales que enriquecerán tus vacaciones. Forma parte del conjunto de comparadores de la compañía Eva Grupo.",
         "thumbnail": "/sections/recentProjects/arabe.webp",

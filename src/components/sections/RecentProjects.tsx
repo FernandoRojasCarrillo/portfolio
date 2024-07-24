@@ -29,14 +29,16 @@ export const RecentProjects = () => {
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
 
   const cardsTranslateY = [
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [-100, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0], [0, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [-200, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.3], [-100, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.3], [100, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.3], [-150, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.3], [0, 0]), springConfig),
   ]
   const cardsTranslateX = [
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [300, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [200, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [-300, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.3], [350, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.3], [-700, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.3], [500, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.3], [-350, 0]), springConfig),
   ]
 
   const rotateX = useSpring(
@@ -84,7 +86,7 @@ export const RecentProjects = () => {
           opacity: isDesktop ? opacity : 100,
         }}
       >
-        <motion.div className="grid lg:grid-cols-4 max-lg:gap-6 md:px-4 lg:grid-rows-[repeat(7,minmax(0,8rem))] max-lg:max-w-2xl">
+        <motion.div className="grid isolate lg:grid-cols-[repeat(20,minmax(0,1fr))] gap-4 max-lg:gap-6 md:px-4 lg:grid-rows-[repeat(6,minmax(0,7.5rem))] max-lg:max-w-2xl">
           {t.raw("cards.options").map((option: string, index: number) => (
             <ProductCard
               key={index}
@@ -94,11 +96,13 @@ export const RecentProjects = () => {
               description={t(`cards.${option}.description`)}
               link={t.raw(`cards.${option}.link`)}
               thumbnail={t(`cards.${option}.thumbnail`)}
-              translateY={cardsTranslateY[index]}
-              translateX={cardsTranslateX[index]}
-              className={cn("lg:col-span-2", {
-                "lg:col-start-2 lg:row-start-3 lg:z-10": index === 0,
-                "lg:col-start-3 lg:row-start-5": index === 2,
+              translateY={cardsTranslateY[index || 0]}
+              translateX={cardsTranslateX[index || 0]}
+              className={cn("", {
+                "lg:col-span-12 lg:row-span-3": index === 0,
+                "lg:col-span-8 lg:row-span-3": index === 1,
+                "lg:col-span-9 lg:row-span-3": index === 2,
+                "lg:col-span-11 lg:row-span-3 lg:-z-10": index === 3,
               })}
             />
           ))}
@@ -126,7 +130,7 @@ export const ProductCard = ({
         y: isDesktop ? translateY : 0,
         x: isDesktop ? translateX : 0,
       }}
-      className={cn("group/product card h-56 sm:h-[24rem] w-full relative flex-shrink-0 hover:z-50 shadow-lg", className)}
+      className={cn("group/product card h-56 rounded-lg overflow-hidden sm:h-full w-full relative flex-shrink-0 hover:z-50 shadow-lg", className)}
     >
       <Image
         src={thumbnail}
