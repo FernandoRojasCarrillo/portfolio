@@ -26,19 +26,19 @@ export const RecentProjects = () => {
     offset: ["start start", "end start"],
   });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 300, damping: 30, bounce: 0 };
 
   const cardsTranslateY = [
-    useSpring(useTransform(scrollYProgress, [0, 0.3], [-100, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.3], [100, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.3], [-150, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.3], [0, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [-100, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [100, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [-150, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [0, 0]), springConfig),
   ]
   const cardsTranslateX = [
-    useSpring(useTransform(scrollYProgress, [0, 0.3], [350, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.3], [-700, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.3], [500, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.3], [-350, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [350, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [-650, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [550, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [-350, 0]), springConfig),
   ]
 
   const rotateX = useSpring(
@@ -136,7 +136,7 @@ export const ProductCard = ({
         src={thumbnail}
         height="600"
         width="600"
-        className="object-cover object-left-top md:absolute h-full w-full max-sm:rounded-xl inset-0"
+        className="object-cover object-top md:absolute h-full w-full max-sm:rounded-xl inset-0"
         alt=""
       />
 
