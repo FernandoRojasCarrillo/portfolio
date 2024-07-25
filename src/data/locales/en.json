@@ -253,6 +253,68 @@
       }
     }
   },
+  "academicProjects": {
+    "title": "Personal projects <br></br> exploring <color> new <br></br> technologies</color>",
+    "description": "In this section, I share some of the projects I have undertaken as part of my continuous learning process. These projects highlight my initiative for self-learning and my ability to apply new technologies in practical contexts.",
+    "cards": [
+      {
+        "title": "Live Docs Nextjs",
+        "description": "Live Docs is an application similar to Google Docs that allows users to securely sign up, collaborate in real-time, and receive notifications. Users can interact with each other, leave comments, invite others to join, and manage editing or viewing permissions for each user.",
+        "link": {
+          "text": "Website",
+          "href": "https://live-docs-next.vercel.app/"
+        },
+        "images": {
+          "interval": 4000,
+          "options": [
+            {
+              "id": 0,
+              "src": "/sections/academicProjects/live-docs-1.webp",
+              "alt": ""
+            },
+            {
+              "id": 1,
+              "src": "/sections/academicProjects/live-docs-2.webp",
+              "alt": ""
+            },
+            {
+              "id": 2,
+              "src": "/sections/academicProjects/live-docs-3.webp",
+              "alt": ""
+            }
+          ]
+        }
+      },
+      {
+        "title": "Yoom Videoconference",
+        "description": "This project is a replica of Zoom, the popular videoconferencing tool. It allows users to securely log in, create meetings, and access various features such as session recording, screen sharing, and participant management.",
+        "link": {
+          "text": "Website",
+          "href": "https://zoom-clone-nine-tau.vercel.app/"
+        },
+       "images": {
+          "interval": 5000,
+          "options": [
+            {
+              "id": 0,
+              "src": "/sections/academicProjects/zoom-clone-1.webp",
+              "alt": ""
+            },
+            {
+              "id": 1,
+              "src": "/sections/academicProjects/zoom-clone-2.webp",
+              "alt": ""
+            },
+            {
+              "id": 2,
+              "src": "/sections/academicProjects/zoom-clone-3.webp",
+              "alt": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
   "footer": {
     "title": "Ready to take your <color>digital presence</color> to the <color>next level?</color>",
     "subtitle": "Get in touch with me today and let's discuss how I can help you achieve your goals.",
