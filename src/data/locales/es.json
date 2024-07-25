@@ -254,8 +254,8 @@
     }
   },
   "academicProjects": {
-    "title": "Algunos proyectos personales <br></br> con <color>propositos academicos</color>",
-    "description": "Descubre algunos de los proyectos que he desarrollado para aprender nuevas tecnologías y perfeccionar mis habilidades en contextos técnicos desafiantes.",
+    "title": "Proyectos personales <br></br> explorando <color> nuevas <br></br> tecnologías</color>",
+    "description": "En esta sección, comparto algunos de los proyectos que he realizado como parte de mi proceso de aprendizaje continuo. Estos proyectos destacan mi iniciativa para autoformarme y mi capacidad para aplicar nuevas tecnologías en contextos prácticos.",
     "cards": [
       {
         "title": "Live Docs Nextjs",
@@ -290,7 +290,7 @@
         "description": "Este proyecto es una réplica de Zoom, la popular herramienta de videoconferencia. Permite a los usuarios iniciar sesión de manera segura, crear reuniones y acceder a diversas funcionalidades, como grabación de sesiones, compartir pantalla y gestión de participantes.",
         "link": {
           "text": "Sitio web",
-          "href": "hhttps://zoom-clone-nine-tau.vercel.app/"
+          "href": "https://zoom-clone-nine-tau.vercel.app/"
         },
        "images": {
           "interval": 5000,

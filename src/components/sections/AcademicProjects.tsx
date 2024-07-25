@@ -11,15 +11,15 @@ const AcademicProjects = () => {
 
   return (
     <section className="py-14 md:py-20">
-      <div className="container flex flex-col gap-8 md:gap-16">
-        <div className="flex flex-col mx-auto gap-6 max-w-3xl">
-          <h2 className="text-3xl md:text-5xl font-bold sm:text-center">
+      <div className="container flex flex-col gap-8 md:gap-16 ">
+        <div className="flex flex-col gap-6 max-w-3xl w-full mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold ">
             {t.rich("title", {
               br: () => <br />,
               color: (text) => <span className="text-purple">{text}</span>,
             })}
           </h2>
-          <p className="text-base md:text-lg sm:text-center">{t("description")}</p>
+          <p className="text-base md:text-lg text-pretty">{t("description")}</p>
         </div>
 
         <div className="grid max-w-3xl w-full gap-4 md:gap-14 mx-auto ">
@@ -38,12 +38,12 @@ const AcademicProjectCard = ({ data }: any) => {
   const { title, description, link, images } = data;
 
   return (
-    <div className="flex flex-col gap-6 md:gap-8 bg-black-100 rounded-2xl pt-16 pb-8">
+    <div className="flex flex-col gap-6 md:gap-8 bg-black-100 rounded-2xl pt-8 sm:pt-16 pb-6 sm:pb-8">
       <CardStack items={images.options} intervalDuration={images.interval} />
 
       <div className="flex flex-col gap-4 w-full">
         <h3 className="text-2xl text-purple font-semibold">{title}</h3>
-        <p className="text-sm md:text-lg text-white">{description}</p>
+        <p className="text-sm md:text-lg text-white text-pretty">{description}</p>
       </div>
 
       <Link

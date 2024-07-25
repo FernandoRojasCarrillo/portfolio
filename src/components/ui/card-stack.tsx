@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useIsDesktop } from "@/hooks/useResponsive";
 
 let interval: any;
 
@@ -22,7 +23,9 @@ export const CardStack = ({
   scaleFactor?: number;
   intervalDuration?: number;
 }) => {
-  const CARD_OFFSET = offset || 25;
+  const isDesktop = useIsDesktop();
+
+  const CARD_OFFSET = offset || isDesktop ? 25 : 15;
   const SCALE_FACTOR = scaleFactor || 0.06;
   const OPACITY = 0.4;
   const [cards, setCards] = useState<Card[]>(items);
@@ -43,7 +46,7 @@ export const CardStack = ({
   };
 
   return (
-    <div className="relative h-[12rem] sm:h-[26rem] w-full">
+    <div className="relative h-[11rem] sm:h-[26rem] w-full">
       {cards.map((card, index) => {
         return (
           <motion.div
