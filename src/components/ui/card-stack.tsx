@@ -7,24 +7,24 @@ let interval: any;
 
 type Card = {
   id: number;
-  name: string;
-  designation: string;
   src: string;
   alt: string;
-  content: React.ReactNode;
 };
 
 export const CardStack = ({
   items,
   offset,
   scaleFactor,
+  intervalDuration = 5000,
 }: {
   items: Card[];
   offset?: number;
   scaleFactor?: number;
+  intervalDuration?: number;
 }) => {
-  const CARD_OFFSET = offset || 10;
+  const CARD_OFFSET = offset || 25;
   const SCALE_FACTOR = scaleFactor || 0.06;
+  const OPACITY = 0.4;
   const [cards, setCards] = useState<Card[]>(items);
 
   useEffect(() => {
@@ -39,16 +39,16 @@ export const CardStack = ({
         newArray.unshift(newArray.pop()!); // move the last element to the front
         return newArray;
       });
-    }, 5000);
+    }, intervalDuration);
   };
 
   return (
-    <div className="relative  h-60 w-60 md:h-60 md:w-96">
+    <div className="relative h-[12rem] sm:h-[26rem] w-full">
       {cards.map((card, index) => {
         return (
           <motion.div
             key={card.id}
-            className="absolute dark:bg-black bg-white overflow-hidden h-60 w-60 md:h-60 md:w-96 rounded-3xl shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
+            className="absolute dark:bg-black shadow-sm bg-white overflow-hidden rounded-xl flex flex-col justify-between"
             style={{
               transformOrigin: "top center",
             }}
@@ -56,6 +56,7 @@ export const CardStack = ({
               top: index * -CARD_OFFSET,
               scale: 1 - index * SCALE_FACTOR, // decrease scale for cards that are behind
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
+              opacity: 1 - index * OPACITY
             }}
           >
             <Image

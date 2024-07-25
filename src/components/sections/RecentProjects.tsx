@@ -84,7 +84,7 @@ export const RecentProjects = () => {
           opacity: isDesktop ? opacity : 100,
         }}
       >
-        <motion.div className="grid lg:grid-cols-4 max-lg:gap-6 md:px-4 lg:grid-rows-[repeat(7,minmax(0,8rem))] max-lg:max-w-2xl">
+        <motion.div className="grid lg:grid-cols-4 max-lg:gap-8 md:px-4 lg:grid-rows-[repeat(7,minmax(0,8rem))] max-lg:max-w-2xl">
           {t.raw("cards.options").map((option: string, index: number) => (
             <ProductCard
               key={index}
