@@ -13,13 +13,7 @@ export const TeckStackCarousel = () => {
   const t = useTranslations("about.techStack");
 
   const plugin = useRef(
-    Autoplay({
-      delay: 2000,
-      stopOnInteraction: false,
-      stopOnMouseEnter: false,
-      stopOnLastSnap: false,
-      stopOnFocusIn: false,
-    })
+    Autoplay({ delay: 2000, stopOnInteraction: false })
   );
 
   return (
