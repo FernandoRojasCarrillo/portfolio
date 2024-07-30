@@ -4,7 +4,11 @@ export type ProductCardProps = {
   title: string | React.ReactNode;
   description: string;
   link: any;
-  thumbnail: string;
+  image: {
+    desktop: string;
+    mobile: string;
+    alt: string;
+  };
   className?: string;
   translateY: MotionValue<number>;
   translateX: MotionValue<number>;

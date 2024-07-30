@@ -117,8 +117,8 @@
         }
       ]
     },
-    "cards": [
-      {
+    "cards": {
+      "cardOne": {
         "id": 1,
         "title": "I promote teamwork through open and constructive communication.",
         "description": "",
@@ -128,7 +128,7 @@
         "spareImg": "",
         "button": null
       },
-      {
+      "cardTwo": {
         "id": 2,
         "title": "Adaptable to various time zones, ensuring smooth and timely communication.",
         "description": "",
@@ -138,9 +138,9 @@
         "spareImg": "",
         "button": null
       },
-      {
+      "cardThree": {
         "id": 3,
-        "title": "Want to know more about my profile?",
+        "title": "Want to know more <br></br> about my profile?",
         "description": "",
         "imgClassName": "",
         "titleClassName": "justify-start",
@@ -152,7 +152,7 @@
           "link": "/en/resume.pdf"
         }
       },
-      {
+      "cardFour": {
         "id": 4,
         "title": "Passionate about technology and dedicated to the art of development.",
         "description": "",
@@ -162,9 +162,9 @@
         "spareImg": "/sections/about/grid.svg",
         "button": null
       },
-      {
+      "cardFive": {
         "id": 5,
-        "title": "Ready to start a project together?",
+        "title": "Ready to start a <br></br> project together?",
         "description": "",
         "imgClassName": "",
         "titleClassName": "md:max-w-full max-w-60",
@@ -176,16 +176,12 @@
           "link": ""
         }
       }
-    ]
+    }
   },
   "experience": {
     "title": "My <color>professional</color> experience",
     "cards": {
-      "options": [
-        "cardOne",
-        "cardTwo",
-        "cardThree"
-      ],
+      "options": ["cardOne", "cardTwo", "cardThree"],
       "cardOne": {
         "title": "FRONTEND DEVELOPER",
         "description": "In my role as a Frontend Developer for Eva Group, I made significant contributions to coding and optimizing websites, focusing on projects in Madrid, Barcelona, and other international markets. I also actively participated in product internationalization to Catalan, English, Basque, and Arabic languages.",
@@ -217,38 +213,59 @@
   },
   "recentProjects": {
     "title": "A small selection of <color>recent projects</color>",
-    "description": "Explore a selection of my most recent projects, developed with cutting-edge tools for web applications. These projects highlight the use of Next.js for optimal performance, Tailwind for modern design, and the Shadcn library for stylish components.",
+    "description": "Explore a selection of my most recent projects, developed with cutting-edge technologies for web applications. Highlights include the use of Next.js for optimal performance, Tailwind for modern design, and the Shadcn library for stylish components.",
     "cards": {
-      "options": [
-        "cardOne",
-        "cardTwo",
-        "cardThree"
-      ],
+      "options": ["cardOne", "cardTwo", "cardThree", "cardFour"],
       "cardOne": {
-        "title": "Video Game Comparison Platform",
-        "description": "Discover the most enjoyable way to compare video game prices on major platforms and find perfect deals within your budget. This platform provides an exceptional user experience, designed specifically for gaming enthusiasts in Madrid.",
-        "thumbnail": "/sections/recentProjects/madrid.webp",
+        "title": "Video Game <color>Comparison Platform</color>",
+        "description": "Discover the most enjoyable way to compare video game prices on major platforms and find the perfect deals for your budget. This platform provides an exceptional user experience, specially designed for video game enthusiasts in Madrid.",
+        "image": {
+          "desktop": "/sections/recentProjects/project-1.webp",
+          "mobile": "/sections/recentProjects/project-1-m.webp",
+          "alt": ""
+        },
         "link": {
           "text": "Website",
           "href": "https://www.videojuego.madrid/"
         }
       },
       "cardTwo": {
-        "title": "Funeral Insurance Comparison",
-        "description": "On this web platform, you can compare various funeral insurance policies to find the one that best suits your needs. Additionally, on Eva Seguros' Blog, you'll find a variety of articles explaining what funeral insurance is and how you can purchase it through our comparison tool.",
-        "thumbnail": "/sections/recentProjects/decesos.webp",
+        "title": "Car Insurance <color>Comparison Platform</color>",
+        "description": "Discover the most efficient and friendly way to compare car insurance prices from major insurers. This platform is designed to offer an exceptional user experience, allowing residents of Barcelona to find the best deals tailored to their budget and needs.",
+        "image": {
+          "desktop": "/sections/recentProjects/project-2.webp",
+          "mobile": "/sections/recentProjects/project-2-m.webp",
+          "alt": ""
+        },
         "link": {
           "text": "Website",
-          "href": "https://www.segurodedecesos.com/"
+          "href": "https://www.assegurancadecotxe.com/"
         }
       },
       "cardThree": {
-        "title": "Home Rental Comparison",
-        "description": "Embark on your search for the perfect vacation home with our website. Designed with a unique perspective for Arabic-speaking countries, this portal is your perfect ally in discovering ideal accommodations that will enrich your holidays. It is part of Eva Group's suite of comparison platforms.",
-        "thumbnail": "/sections/recentProjects/arabe.webp",
+        "title": "Home Rental <color>Comparison Platform</color>",
+        "description": "Embark on the search for your next vacation home with our website. Designed with a unique perspective for Arab countries, this portal is your perfect ally for discovering ideal accommodations that will enrich your holidays. It is part of the Eva Group's collection of comparison platforms.",
+        "image": {
+          "desktop": "/sections/recentProjects/project-3.webp",
+          "mobile": "/sections/recentProjects/project-3-m.webp",
+          "alt": ""
+        },
         "link": {
           "text": "Website",
           "href": "https://www.kiramanzil.com/"
+        }
+      },
+      "cardFour": {
+        "title": "Funeral Insurance <color>Comparison Platform</color>",
+        "description": "On this web platform, you can compare different funeral insurance policies to find the one that best suits your needs. Additionally, on the Eva Insurance Blog, you will find a variety of articles explaining what funeral insurance is and how you can purchase it through our comparison platform.",
+        "image": {
+          "desktop": "/sections/recentProjects/project-4.webp",
+          "mobile": "/sections/recentProjects/project-4-m.webp",
+          "alt": ""
+        },
+        "link": {
+          "text": "Website",
+          "href": "https://www.segurodedecesos.com/"
         }
       }
     }
@@ -287,12 +304,12 @@
       },
       {
         "title": "Yoom Videoconference",
-        "description": "This project is a replica of Zoom, the popular videoconferencing tool. It allows users to securely log in, create meetings, and access various features such as session recording, screen sharing, and participant management.",
+        "description": "This project is a replica of Zoom, the popular videoconferencing platform. It allows users to securely log in, create meetings, and access various features such as session recording, screen sharing, and participant management.",
         "link": {
           "text": "Website",
           "href": "https://zoom-clone-nine-tau.vercel.app/"
         },
-       "images": {
+        "images": {
           "interval": 5000,
           "options": [
             {

@@ -10,7 +10,6 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true,
-    domains: ["assets.aceternity.com"],
     remotePatterns: [
       {
         protocol: "http",

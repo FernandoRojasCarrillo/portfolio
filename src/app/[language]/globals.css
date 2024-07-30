@@ -91,6 +91,6 @@
 
 @layer utilities {
   .container {
-    @apply mx-auto w-full max-w-[1400px] px-6 lg:px-14
+    @apply mx-auto w-full max-w-[1250px] px-6 lg:px-14
   }
 }

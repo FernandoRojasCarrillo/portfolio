@@ -29,16 +29,16 @@ export const RecentProjects = () => {
   const springConfig = { stiffness: 300, damping: 30, bounce: 0 };
 
   const cardsTranslateY = [
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [-100, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [100, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [-150, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [0, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [50, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [-70, 0]), springConfig),
     useSpring(useTransform(scrollYProgress, [0, 0.2], [0, 0]), springConfig),
   ]
   const cardsTranslateX = [
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [350, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [-650, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [550, 0]), springConfig),
-    useSpring(useTransform(scrollYProgress, [0, 0.2], [-350, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [0, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [-70, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [50, 0]), springConfig),
+    useSpring(useTransform(scrollYProgress, [0, 0.2], [0, 0]), springConfig),
   ]
 
   const rotateX = useSpring(
@@ -86,7 +86,7 @@ export const RecentProjects = () => {
           opacity: isDesktop ? opacity : 100,
         }}
       >
-        <motion.div className="grid isolate lg:grid-cols-[repeat(20,minmax(0,1fr))] gap-4 max-lg:gap-6 md:px-4 lg:grid-rows-[repeat(6,minmax(0,7.5rem))] max-lg:max-w-2xl">
+        <motion.div className="grid isolate md:grid-cols-2 xl:grid-cols-[repeat(20,minmax(0,1fr))] gap-4 max-lg:gap-6 md:px-4 md:auto-rows-[25rem_20rem_25rem] xl:grid-rows-[repeat(6,minmax(0,6.5rem))] max-md:max-w-2xl">
           {t.raw("cards.options").map((option: string, index: number) => (
             <ProductCard
               key={index}
@@ -95,14 +95,14 @@ export const RecentProjects = () => {
               })}
               description={t(`cards.${option}.description`)}
               link={t.raw(`cards.${option}.link`)}
-              thumbnail={t(`cards.${option}.thumbnail`)}
+              image={t.raw(`cards.${option}.image`)}
               translateY={cardsTranslateY[index || 0]}
               translateX={cardsTranslateX[index || 0]}
               className={cn("", {
-                "lg:col-span-12 lg:row-span-3": index === 0,
-                "lg:col-span-8 lg:row-span-3": index === 1,
-                "lg:col-span-9 lg:row-span-3": index === 2,
-                "lg:col-span-11 lg:row-span-3 lg:-z-10": index === 3,
+                "md:col-span-2 xl:col-span-12 xl:row-span-3": index === 0,
+                "xl:col-span-8 xl:row-span-3": index === 1,
+                "xl:col-span-9 xl:row-span-3": index === 2,
+                "md:col-span-2 xl:col-span-11 xl:row-span-3 xl:-z-10": index === 3,
               })}
             />
           ))}
@@ -116,11 +116,13 @@ export const ProductCard = ({
   title,
   description,
   link,
-  thumbnail,
+  image,
   className,
   translateY,
   translateX,
 }: ProductCardProps) => {
+
+  console.log("image ", image)
 
   const isDesktop = useIsDesktop();
 
@@ -133,11 +135,18 @@ export const ProductCard = ({
       className={cn("group/product card h-56 rounded-lg overflow-hidden sm:h-full w-full relative flex-shrink-0 hover:z-50 shadow-lg", className)}
     >
       <Image
-        src={thumbnail}
+        src={image.desktop}
         height="600"
         width="600"
-        className="object-cover object-top md:absolute h-full w-full max-sm:rounded-xl inset-0"
-        alt=""
+        className="max-sm:hidden object-cover object-top md:absolute h-full w-full max-sm:rounded-xl inset-0"
+        alt={image.alt}
+      />
+      <Image
+        src={image.mobile}
+        height="600"
+        width="600"
+        className="sm:hidden object-cover object-top md:absolute h-full w-full max-sm:rounded-xl inset-0"
+        alt={image.alt}
       />
 
       <div className="flex flex-col gap-4 md:gap-6 justify-end p-4 md:p-8 absolute inset-0 h-full w-full md:opacity-0 transition-opacity duration-300 rounded-[inherit] overflow-clip group-hover/product:opacity-100 group-hover/product:duration-0 md:bg-[linear-gradient(45deg,rgba(0,3,25,0.9),80%,rgba(0,3,25,0.4))] bg-[linear-gradient(15deg,rgba(0,3,25,0.99),transparent_80%)] text-white max-sm:rounded-xl">
@@ -146,11 +155,11 @@ export const ProductCard = ({
           {title}
         </h2>
 
-        <p className="max-md:hidden font-light opacity-0 translate-x-20 transition-all duration-300 group-hover/product:translate-x-0 group-hover/product:opacity-100">{description}</p>
+        <p className="max-md:hidden text-xs xl:text-base max-xl:max-w-md font-light opacity-0 translate-x-20 transition-all duration-300 group-hover/product:translate-x-0 group-hover/product:opacity-100">{description}</p>
 
         <div className="flex gap-4 justify-between md:opacity-0 md:translate-x-32 transition-all duration-300 group-hover/product:translate-x-0 group-hover/product:opacity-100">
           <Link href={link.href} target="blank" className="flex gap-2 lg:gap-3 md:items-center cursor-pointer" >
-            <span className="text-purple max-md:text-xs">{link.text}</span>
+            <span className="text-purple max-xl:text-xs">{link.text}</span>
             <FaLocationArrow color="#CBACF9" className="size-3" />
           </Link>
         </div>

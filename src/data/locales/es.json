@@ -117,8 +117,8 @@
         }
       ]
     },
-    "cards": [
-      {
+    "cards": {
+      "cardOne": {
         "id": 1,
         "title": "Fomento el trabajo en equipo mediante una comunicación abierta y constructiva.",
         "description": "",
@@ -128,7 +128,7 @@
         "spareImg": "",
         "button": null
       },
-      {
+      "cardTwo": {
         "id": 2,
         "title": "Adaptable a diversas zonas horarias, garantizo una comunicación fluida y oportuna.",
         "description": "",
@@ -138,9 +138,9 @@
         "spareImg": "",
         "button": null
       },
-      {
+      "cardThree": {
         "id": 3,
-        "title": "¿Quieres conocer más sobre mi perfil?",
+        "title": "¿Quieres conocer más <br></br> sobre mi perfil?",
         "description": "",
         "imgClassName": "",
         "titleClassName": "justify-start",
@@ -152,7 +152,7 @@
           "link": "/es/curriculum.pdf"
         }
       },
-      {
+      "cardFour": {
         "id": 4,
         "title": "Apasionado por la tecnología y dedicado al arte del desarrollo.",
         "description": "",
@@ -162,9 +162,9 @@
         "spareImg": "/sections/about/grid.svg",
         "button": null
       },
-      {
+      "cardFive": {
         "id": 5,
-        "title": "¿Quieres empezar un proyecto juntos?",
+        "title": "¿Quieres empezar un <br></br> proyecto juntos?",
         "description": "",
         "imgClassName": "",
         "titleClassName": "md:max-w-full max-w-60",
@@ -176,7 +176,7 @@
           "link": ""
         }
       }
-    ]
+    }
   },
   "experience": {
     "title": "Mi experiencia <color>profesional</color>",
@@ -217,7 +217,7 @@
   },
   "recentProjects": {
     "title": "Una pequeña selección de <color>proyectos recientes</color>",
-    "description": "Explora una selección de mis proyectos más recientes, desarrollados con herramientas de vanguardia para aplicaciones web. Destacan entre ellos el uso de Next.js para un rendimiento óptimo, Tailwind para un diseño moderno y la biblioteca Shadcn para componentes con estilo.",
+    "description": "Explora una selección de mis proyectos más recientes, desarrollados con tecnologías de vanguardia para aplicaciones web. Destacan entre ellos el uso de Next.js para un rendimiento óptimo, Tailwind para un diseño moderno y la biblioteca Shadcn para componentes con estilo.",
     "cards": {
       "options": [
         "cardOne",
@@ -228,37 +228,53 @@
       "cardOne": {
         "title": "Plataforma de Comparación de <color>Videojuegos</color>",
         "description": "Descubre la forma más amena de comparar precios de videojuegos en las principales plataformas y encuentra las ofertas perfectas para tu presupuesto. Esta plataforma brinda una experiencia de usuario excepcional, diseñada especialmente para los entusiastas de los videojuegos en Madrid.",
-        "thumbnail": "/sections/recentProjects/madrid.webp",
+        "image": {
+          "desktop": "/sections/recentProjects/project-1.webp",
+          "mobile": "/sections/recentProjects/project-1-m.webp",
+          "alt": ""
+        },
         "link": {
           "text": "Sitio web",
           "href": "https://www.videojuego.madrid/"
         }
       },
       "cardTwo": {
-        "title": "Comparador de <color>Seguro de Decesos</color>",
-        "description": "En esta plataforma web, puedes comparar distintos seguros de decesos para encontrar el que mejor se adapte a tus necesidades. Además, en el Blog de Eva Seguros, encontrarás una variedad de artículos donde te explicamos qué es un seguro de decesos y cómo puedes contratarlo a través de nuestro comparador.",
-        "thumbnail": "/sections/recentProjects/decesos.webp",
+        "title": "Comparador de <color>seguros de coche</color>",
+        "description": "Descubre la forma más eficiente y amigable de comparar precios de seguros de coche en las principales aseguradoras. Esta plataforma está diseñada para ofrecer una experiencia de usuario excepcional, permitiendo a los residentes de Barcelona encontrar las mejores ofertas adaptadas a su presupuesto y necesidades.",
+        "image": {
+          "desktop": "/sections/recentProjects/project-2.webp",
+          "mobile": "/sections/recentProjects/project-2-m.webp",
+          "alt": ""
+        },
         "link": {
           "text": "Sitio web",
-          "href": "https://www.segurodedecesos.com/"
+          "href": "https://www.assegurancadecotxe.com/"
         }
       },
       "cardThree": {
         "title": "Comparador de <color>Alquiler de Viviendas</color>",
         "description": "Embárcate en la búsqueda de tu próximo hogar vacacional con nuestro sitio web. Diseñado con una perspectiva única para los países árabes, este portal es tu aliado perfecto para descubrir alojamientos ideales que enriquecerán tus vacaciones. Forma parte del conjunto de comparadores de la compañía Eva Grupo.",
-        "thumbnail": "/sections/recentProjects/arabe.webp",
+        "image": {
+          "desktop": "/sections/recentProjects/project-3.webp",
+          "mobile": "/sections/recentProjects/project-3-m.webp",
+          "alt": ""
+        },
         "link": {
           "text": "Sitio web",
           "href": "https://www.kiramanzil.com/"
         }
       },
       "cardFour": {
-        "title": "Comparador de <color>Alquiler de Viviendas</color>",
-        "description": "Embárcate en la búsqueda de tu próximo hogar vacacional con nuestro sitio web. Diseñado con una perspectiva única para los países árabes, este portal es tu aliado perfecto para descubrir alojamientos ideales que enriquecerán tus vacaciones. Forma parte del conjunto de comparadores de la compañía Eva Grupo.",
-        "thumbnail": "/sections/recentProjects/arabe.webp",
+        "title": "Comparador de <color>Seguro de Decesos</color>",
+        "description": "En esta plataforma web, puedes comparar distintos seguros de decesos para encontrar el que mejor se adapte a tus necesidades. Además, en el Blog de Eva Seguros, encontrarás una variedad de artículos donde te explicamos qué es un seguro de decesos y cómo puedes contratarlo a través de nuestro comparador.",
+        "image": {
+          "desktop": "/sections/recentProjects/project-4.webp",
+          "mobile": "/sections/recentProjects/project-4-m.webp",
+          "alt": ""
+        },
         "link": {
           "text": "Sitio web",
-          "href": "https://www.kiramanzil.com/"
+          "href": "https://www.segurodedecesos.com/"
         }
       }
     }
